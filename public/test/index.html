@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi app</title>
+</head>
+<body>
+
+<h1>Inicia Sesion</h1>
+<button id="login">Inicia con Google</button>
+<div id="root"></div>
+
+<!-- *********************+jquery************************+ -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+</script>
+
+
+<!-- ********************+firebase*********************** -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDt6f4Uka3ZYFm0APhJ277cZcd8CuG4vw4",
+        authDomain: "gimnasio-37572.firebaseapp.com",
+        databaseURL: "https://gimnasio-37572.firebaseio.com",
+        projectId: "gimnasio-37572",
+        storageBucket: "gimnasio-37572.appspot.com",
+        messagingSenderId: "104313875921",
+        appId: "1:104313875921:web:5bc0f7ba72a1c391db44f0",
+        measurementId: "G-VTXM2116JG"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+</script>
+
+<script src="app.js"></script>
+</body>
+</html>

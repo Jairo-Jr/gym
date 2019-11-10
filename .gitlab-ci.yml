@@ -1,0 +1,18 @@
+image: node:alpine
+build:
+  stage: build
+  script:
+    - echo "construccion"
+testy:
+  stage: test
+  script:
+    - echo "prueba"
+deploy_production:
+  stage: deploy
+  environment: Production
+  only:
+    - master
+  script:
+    - npm install
+    - npm i -g firebase-tools
+    - firebase deploy --non-interactive --token "1//01tGRw9eGVC8aCgYIARAAGAESNwF-L9IrgwIUNRAm327Q28AzAbNB9QDmGM-kBHEiXvVaPKlHrdcQoUBKJF-q5sE77oaP8mH-PvU" --project demogitlab-4e37e
